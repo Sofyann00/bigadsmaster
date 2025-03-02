@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - PT SINAR TEKNOLOGI SOLUSI',
-  description: 'Privacy Policy for Beamscode services and customer data protection',
+  title: 'Privacy Policy - PT SIGMA TEKNOLOGI INTEGRA',
+  description: 'Privacy Policy for bigAdsMaster services and customer data protection',
 }
 
 export default function PrivacyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
                 1. Information We Collect
               </h2>
               <p className="text-muted-foreground">
-                Beamscode collects personal information including but not limited to: name, email address, phone number, shipping address, shoe size preferences, purchase history, and payment information when you make a purchase or create an account on our platform.
+                bigAdsMaster collects personal information including but not limited to: name, email address, phone number, shipping address, shoe size preferences, purchase history, and payment information when you make a purchase or create an account on our platform.
               </p>
             </div>
 
@@ -95,12 +95,12 @@ export default function PrivacyPage() {
               <div className="text-muted-foreground">
                 <p>For any questions about this Privacy Policy, product authenticity, or our data practices, please contact us at:</p>
                 <div className="mt-2">
-                  <p>PT SINAR TEKNOLOGI SOLUSI</p>
+                  <p>PT SIGMA TEKNOLOGI INTEGRA</p>
                   <p>Komplek Perkantoran Duta Merlin Blok F13</p>
                   <p>Jalan Gajah Mada, Petojo Utara</p>
                   <p>Gambir, Jakarta Pusat</p>
                   <p>DKI Jakarta, Indonesia</p>
-                  <p>Email: support@Beamscode.com</p>
+                  <p>Email: support@bigAdsMaster.com</p>
                   <p>Phone: (021) 50111528</p>
                 </div>
               </div>

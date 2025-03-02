@@ -8,6 +8,7 @@ import { products } from "@/lib/data"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import { formatPrice } from "@/lib/data"
+import { useRef } from "react"
 
 export default function Home() {
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
@@ -42,86 +43,102 @@ export default function Home() {
         }, 2000)
       }
       
-      slider.on("created", () => {
-        nextTimeout()
-      })
+      slider.on("created", nextTimeout)
       slider.on("dragStarted", clearNextTimeout)
       slider.on("animationEnded", nextTimeout)
       slider.on("updated", nextTimeout)
     },
   ])
 
+  // Add ref for services section
+  const servicesRef = useRef<HTMLElement>(null)
+  
+  // Scroll handler function
+  const scrollToServices = () => {
+    servicesRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="px-4 py-52 text-center relative overflow-hidden">
-        {/* Primary gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-muted" />
-        
-        {/* Animated background */}
-        <div className="absolute inset-0 bg-[url('/sport_bg.jpg')] bg-cover bg-center opacity-30 animate-pulse-slow" />
-        
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/10" />
-        
-        {/* Radial gradient mask */}
-        <div className="absolute inset-0 [mask-image:radial-gradient(circle_at_center,white,transparent_80%)]">
-          {/* Animated dots pattern */}
-          <div className="absolute inset-0 bg-[url('/dots.png')] bg-repeat opacity-20 animate-float" />
+      {/* Hero Section - Now with a more dynamic and interactive design */}
+      <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
+          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/10" />
+          
+          {/* Floating elements animation */}
+          <div className="absolute inset-0 overflow-hidden">
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute animate-float"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${10 + Math.random() * 10}s`
+                }}
+              >
+                <div className="w-2 h-2 bg-primary/20 rounded-full blur-sm" />
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="max-w-4xl mx-auto relative">
-          <h1 className="text-5xl font-bold tracking-tight sm:text-7xl animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            Boost Your Online Visibility with Expert SEO
+        <div className="relative max-w-5xl mx-auto px-4 py-20 text-center">
+          <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            Dominate Search Rankings
           </h1>
-          <p className="mt-8 text-xl leading-8 text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-200">
-            Drive organic traffic, increase rankings, and grow your business with our data-driven SEO solutions. 
-            From technical optimization to content strategy, we deliver results that matter.
+          <p className="mt-8 text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-200">
+            Transform your online presence with data-driven SEO strategies that deliver measurable results
           </p>
-          <div className="mt-12 flex items-center justify-center gap-x-6">
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/marketplace">
-              <Button size="lg" className="group transition-all duration-300 hover:scale-105">
-                Explore SEO Services
+              <Button size="lg" className="group bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300">
+                Get Started
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={scrollToServices}
+            >
+              Learn More
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* Product Carousel Section */}
-      <section className="py-32 relative overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-muted/50 via-background to-background" />
-        
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.15] mix-blend-overlay" />
-        
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center mb-16">
-            <h2 className="text-base font-semibold leading-7 text-primary">Our Services</h2>
-            <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
-              Complete SEO Solutions for Your Business
+      {/* Services Showcase - Now with a modern card design */}
+      <section ref={servicesRef} className="py-32 relative bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+              Our Services
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Comprehensive SEO solutions tailored to your needs
             </p>
           </div>
-          
+
           <div ref={sliderRef} className="keen-slider">
             {products.map((product) => (
               <div key={product.id} className="keen-slider__slide">
-                <Card className="border-0">
-                  <CardContent className="p-4">
-                    <div className="aspect-square relative overflow-hidden rounded-lg">
+                <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-b from-background to-muted/50">
+                  <CardContent className="p-6">
+                    <div className="aspect-square relative overflow-hidden rounded-lg mb-4">
                       <Image
                         src={product.image}
                         alt={product.name}
                         fill
-                        className="object-cover"
+                        className="object-cover transition-transform duration-300 group-hover:scale-110"
                       />
                     </div>
-                    <div className="mt-4">
-                      <h3 className="font-semibold">{product.name}</h3>
-                      <p className="text-sm text-muted-foreground mt-1">{formatPrice(product.price)}</p>
-                    </div>
+                    <h3 className="text-xl font-semibold">{product.name}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{formatPrice(product.price)}</p>
                   </CardContent>
                 </Card>
               </div>
@@ -130,35 +147,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-32 sm:py-40 relative overflow-hidden">
-        {/* Gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-background via-background to-muted/20" />
-        
-        {/* Animated glow effect */}
-        <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-transparent animate-pulse-slow" />
-        
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-primary">Why Choose Us</h2>
-            <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
-              Data-Driven SEO Excellence
-            </p>
+      {/* Features Section - Now with interactive cards */}
+      <section className="py-32 relative">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold">Why Choose Us</h2>
+            <div className="mt-4 h-1 w-20 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              {features.map((feature) => (
-                <div key={feature.name} className="flex flex-col">
-                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7">
-                    {feature.icon}
-                    {feature.name}
-                  </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
-                    <p className="flex-auto">{feature.description}</p>
-                  </dd>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {features.map((feature) => (
+              <div
+                key={feature.name}
+                className="group p-6 rounded-2xl bg-gradient-to-b from-muted/50 to-transparent border border-muted hover:border-primary/20 transition-all duration-300"
+              >
+                <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {feature.icon}
                 </div>
-              ))}
-            </dl>
+                <h3 className="text-xl font-semibold mb-2">{feature.name}</h3>
+                <p className="text-muted-foreground">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

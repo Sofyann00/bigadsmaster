@@ -65,10 +65,10 @@ export function Footer() {
               <div className="space-y-2">
                 <p>
                   <a
-                    href="mailto:admin@beamscoding.com"
+                    href="mailto:admin@bigadsmaster.com"
                     className="hover:text-foreground transition-colors"
                   >
-                    admin@beamscoding.com
+                    admin@bigadsmaster.com
                   </a>
                 </p>
                 <p>
@@ -88,12 +88,13 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-6">Office Location</h3>
             <div className="text-sm text-muted-foreground">
               <p className="leading-relaxed">
-                Menara Sudirman, Lantai 8,<br />
-                Jalan Jenderal Sudirman Kav. 60,<br />
-                Senayan, Kebayoran Baru,<br />
-                Jakarta Selatan,<br />
-                DKI Jakarta,<br />
-                Kode Pos: 12190
+                Komplek Perkantoran Duta Merlin Blok F13,<br />
+                Jalan Gajah Mada,<br />
+                Desa/Kelurahan Petojo Utara,<br />
+                Kec. Gambir,<br />
+                Kota Adm. Jakarta Pusat,<br />
+                Provinsi DKI Jakarta,<br />
+                Kode Pos: 10130
               </p>
             </div>
           </div>
@@ -101,7 +102,7 @@ export function Footer() {
           {/* Copyright section */}
           <div className="col-span-1 md:col-span-4 mt-16 pt-8 border-t">
             <p className="text-sm text-muted-foreground text-center">
-              © {new Date().getFullYear()} PT SINAR TEKNOLOGI SOLUSI.
+              © {new Date().getFullYear()} PT SIGMA TEKNOLOGI INTEGRA.
             </p>
           </div>
         </div>
