@@ -78,8 +78,24 @@ export const products: Product[] = [
     name: "Mobile SEO Optimization",
     description: "Comprehensive mobile SEO optimization to improve your mobile search rankings. Ensure your website performs perfectly on all mobile devices.",
     price: 3500000,
-    image: "https://images.unsplash.com/photo-1522125670776-3c7b9771f2c1",
+    image: "https://images.unsplash.com/photo-1555421689-d68471e189f2",
     category: "Technical SEO"
+  },
+  {
+    id: 11,
+    name: "Basic Keyword Research",
+    description: "Essential keyword research package for small businesses. Includes identification of 20 high-potential keywords and basic competition analysis.",
+    price: 150000,
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    category: "SEO Analysis"
+  },
+  {
+    id: 12,
+    name: "SEO Health Check",
+    description: "Quick website health check to identify basic SEO issues. Perfect for beginners wanting to understand their website's SEO status.",
+    price: 199000,
+    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
+    category: "SEO Analysis"
   }
 ];
 
