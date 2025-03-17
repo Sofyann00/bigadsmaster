@@ -85,7 +85,7 @@ export default function TermsPage() {
                   <p>Gambir, Jakarta Pusat</p>
                   <p>DKI Jakarta, Indonesia</p>
                   <p>Email: admin@bigadsmaster.com</p>
-                  <p>Phone: (021) 50111528</p>
+                  <p>Phone: (021)-78231455</p>
                 </div>
               </div>
             </div>

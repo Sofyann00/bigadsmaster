@@ -105,7 +105,7 @@ export default function AboutPage() {
               <div className="text-muted-foreground">
                 <p>Get in touch with us:</p>
                 <div className="mt-2 space-y-1">
-                  <p>Phone: (021) 50111528</p>
+                  <p>Phone: (021)-78231455</p>
                   <p>Email: admin@bigadsmaster.com</p>
                   <p>WhatsApp: +62 812-7766-8953</p>
                 </div>
