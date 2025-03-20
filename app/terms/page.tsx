@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - PT SIGMA TEKNOLOGI INTEGRA',
-  description: 'Terms of Service and conditions for using bigAdsMaster services',
+  title: 'Terms of Service - bigAdsMaster',
+  description: 'Terms of Service and conditions for using bigAdsMaster SEO services',
 }
 
 export default function TermsPage() {
@@ -29,19 +29,19 @@ export default function TermsPage() {
 
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-3">
-                2. Products and Services
+                2. Services Offered
               </h2>
               <p className="text-muted-foreground">
-                bigAdsMaster provides authentic sneakers and related footwear products. All product listings, including prices, availability, and specifications, are subject to change without prior notice. We guarantee the authenticity of all products sold through our platform.
+                bigAdsMaster provides professional SEO and digital marketing services including but not limited to SEO audits, on-page optimization, content strategy, link building, local SEO, e-commerce SEO, technical SEO, and SEO monitoring. All service descriptions, including prices, deliverables, and timelines, are subject to change without prior notice. We guarantee the quality and professionalism of all services provided through our platform.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-3">
-                3. Warranty and Returns
+                3. Service Delivery and Satisfaction
               </h2>
               <p className="text-muted-foreground">
-                All products are guaranteed to be 100% authentic. Customers must inspect products upon delivery and report any defects within 48 hours. Returns are only accepted for authenticity issues or manufacturing defects, and items must be unworn, in original condition with all original packaging and tags attached.
+                All services are delivered according to the agreed scope of work. Clients must review deliverables within 7 days of receipt and report any concerns. Revisions are provided based on the original scope of work. We do not guarantee specific rankings or traffic increases as search engine algorithms are beyond our control, but we commit to implementing industry best practices to improve your digital presence.
               </p>
             </div>
 
@@ -50,7 +50,7 @@ export default function TermsPage() {
                 4. Privacy and Data Protection
               </h2>
               <p className="text-muted-foreground">
-                We collect and process personal data in accordance with Indonesian data protection laws. This includes shipping information, purchase history, and payment details. For more information, please refer to our Privacy Policy.
+                We collect and process personal data in accordance with Indonesian data protection laws. This includes business information, website access, analytics data, and payment details. For more information, please refer to our Privacy Policy.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function TermsPage() {
                 5. Limitation of Liability
               </h2>
               <p className="text-muted-foreground">
-                While we guarantee product authenticity, bigAdsMaster shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services, including but not limited to sizing issues or personal preferences.
+                While we strive for excellence in our SEO services, bigAdsMaster shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services, including but not limited to changes in search engine algorithms, competitor activities, or market conditions that may affect SEO performance.
               </p>
             </div>
 

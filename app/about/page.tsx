@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Us - bigadsmaster',
-  description: 'Learn about bigadsmaster, your trusted IT solutions partner in Indonesia',
+  description: 'Learn about bigadsmaster, your trusted SEO and digital marketing partner in Indonesia',
 }
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
             About bigadsmaster
           </h1>
           <p className="text-sm text-muted-foreground italic mb-8">
-            Your Trusted IT Solutions Partner in Indonesia
+            Your Trusted SEO and Digital Marketing Partner in Indonesia
           </p>
 
           <section className="space-y-8">
@@ -23,7 +23,7 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-muted-foreground">
-                Founded with a commitment to digital excellence, bigadsmaster has emerged as a leading IT solutions provider in Indonesia. Our journey began with a clear vision: to help businesses transform and thrive in the digital age through innovative technology solutions and expert services.
+                Founded with a commitment to digital excellence, bigadsmaster has emerged as a leading SEO and digital marketing agency in Indonesia. Our journey began with a clear vision: to help businesses improve their online visibility, drive organic traffic, and achieve higher search engine rankings through innovative SEO strategies and expert services.
               </p>
             </div>
 
@@ -32,12 +32,12 @@ export default function AboutPage() {
                 Why Choose Us
               </h2>
               <ul className="text-muted-foreground list-disc pl-5 space-y-2">
-                <li>Expert Development Team</li>
-                <li>Custom Software Solutions</li>
-                <li>Agile Development Methodology</li>
-                <li>Comprehensive IT Consulting</li>
-                <li>Reliable Technical Support</li>
-                <li>Proven Track Record</li>
+                <li>SEO Specialists with Proven Results</li>
+                <li>Customized SEO Strategies</li>
+                <li>Data-Driven Approach</li>
+                <li>Comprehensive Digital Marketing Solutions</li>
+                <li>Transparent Reporting and Communication</li>
+                <li>Local SEO Expertise for Indonesian Market</li>
               </ul>
             </div>
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
                 Our Commitment
               </h2>
               <p className="text-muted-foreground">
-                At bigadsmaster, we are committed to delivering exceptional IT solutions that drive business growth. Our team of skilled developers and consultants works tirelessly to understand your unique challenges and create tailored solutions that exceed expectations. We pride ourselves on building long-term partnerships and ensuring client success through innovation and technical excellence.
+                At bigadsmaster, we are committed to delivering exceptional SEO solutions that drive business growth. Our team of skilled SEO specialists and digital marketers works tirelessly to understand your unique challenges and create tailored strategies that exceed expectations. We pride ourselves on building long-term partnerships and ensuring client success through innovative techniques and measurable results.
               </p>
             </div>
 
@@ -55,12 +55,16 @@ export default function AboutPage() {
                 Our Services
               </h2>
               <ul className="text-muted-foreground list-disc pl-5 space-y-2">
-                <li>Custom Software Development</li>
-                <li>Web Application Development</li>
-                <li>Mobile App Development</li>
-                <li>IT Consulting</li>
-                <li>Cloud Solutions</li>
-                <li>Digital Transformation</li>
+                <li>Comprehensive SEO Audits & Strategy</li>
+                <li>On-Page SEO Optimization</li>
+                <li>Content Strategy & Creation</li>
+                <li>Link Building Campaigns</li>
+                <li>Local SEO Solutions</li>
+                <li>E-commerce SEO Packages</li>
+                <li>Technical SEO Audits</li>
+                <li>SEO Monitoring & Reporting</li>
+                <li>Competitor Analysis</li>
+                <li>Mobile SEO Optimization</li>
               </ul>
             </div>
 

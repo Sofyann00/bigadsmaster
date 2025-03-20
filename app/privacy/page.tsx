@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - PT SIGMA TEKNOLOGI INTEGRA',
-  description: 'Privacy Policy for bigAdsMaster services and customer data protection',
+  description: 'Privacy Policy for bigAdsMaster SEO services and client data protection',
 }
 
 export default function PrivacyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
                 1. Information We Collect
               </h2>
               <p className="text-muted-foreground">
-                bigAdsMaster collects personal information including but not limited to: name, email address, phone number, shipping address, shoe size preferences, purchase history, and payment information when you make a purchase or create an account on our platform.
+                bigAdsMaster collects personal information including but not limited to: name, email address, phone number, business address, website URLs, analytics access, search console data, business goals, industry information, and payment information when you engage our SEO services or create an account on our platform.
               </p>
             </div>
 
@@ -35,12 +35,12 @@ export default function PrivacyPage() {
                 We use your information to:
               </p>
               <ul className="list-disc ml-6 mt-2 text-muted-foreground space-y-1">
-                <li>Process your sneaker orders and provide customer support</li>
-                <li>Send order tracking and delivery updates</li>
-                <li>Notify you about new sneaker releases and restocks</li>
-                <li>Personalize your shopping experience based on your preferences</li>
-                <li>Verify product authenticity and maintain transaction records</li>
-                <li>Send promotional offers and newsletters (with your consent)</li>
+                <li>Deliver our SEO and digital marketing services</li>
+                <li>Provide progress updates and performance reports</li>
+                <li>Notify you about service improvements and new offerings</li>
+                <li>Customize our SEO strategies based on your business needs</li>
+                <li>Maintain accurate records of our service delivery</li>
+                <li>Send industry insights and newsletters (with your consent)</li>
                 <li>Comply with legal obligations</li>
               </ul>
             </div>
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
                 3. Data Security
               </h2>
               <p className="text-muted-foreground">
-                We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.
+                We implement appropriate technical and organizational measures to protect your personal and business data against unauthorized access, alteration, disclosure, or destruction. This includes secure access to analytics platforms and website backends when required for SEO implementation.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
                 4. Data Retention
               </h2>
               <p className="text-muted-foreground">
-                We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law.
+                We retain your personal and business information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. SEO performance data may be retained for benchmarking and historical analysis purposes.
               </p>
             </div>
 
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
                 6. Cookies and Tracking
               </h2>
               <p className="text-muted-foreground">
-                We use cookies and similar tracking technologies to enhance your shopping experience, remember your preferences, maintain your login status, analyze site traffic, and provide personalized sneaker recommendations based on your browsing history.
+                We use cookies and similar tracking technologies to enhance your experience on our website, remember your preferences, maintain your login status, analyze site traffic, and provide personalized content. We may also use tracking tools to monitor the performance of SEO strategies we implement for your business.
               </p>
             </div>
 
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
                 7. Contact Information
               </h2>
               <div className="text-muted-foreground">
-                <p>For any questions about this Privacy Policy, product authenticity, or our data practices, please contact us at:</p>
+                <p>For any questions about this Privacy Policy or our data practices, please contact us at:</p>
                 <div className="mt-2">
                   <p>PT SIGMA TEKNOLOGI INTEGRA</p>
                   <p>Komplek Perkantoran Duta Merlin Blok F13</p>
